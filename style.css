@@ -1,0 +1,104 @@
+* {
+  font-family: 'Tiro Kannada', serif;
+  font-size: 6vh;
+  color: rgb(30, 30, 30);
+}
+
+.innerBox p {
+  font-size: 4vh;
+  margin: 0;
+  color: rgb(239, 230, 230);
+}
+
+body {
+  background-image: linear-gradient(to top left, #753682 0%, #bf2e34 100%);
+  display: flex;
+  justify-content: space-around;
+  height: 100vh;
+}
+
+.container {
+  height: 85vh;
+  width: 70vw;
+  background-color: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(200px);
+  position: relative;
+  top: 6%;
+  border-radius: 0.5rem;
+  display: flex;
+  transition: all 0.8s;
+}
+
+.box {
+  width: 50%;
+  text-align: center;
+  padding: 1rem;
+  transition: all 1s;
+}
+
+.innerBox {
+  margin-top: 2rem;
+  display: inline-block;
+  width: 5rem;
+  background-color: #c7365f;
+  border-radius: 0.5rem;
+  transition: all 1s;
+}
+
+.score {
+  color: #c7365f;
+}
+
+.dice {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translateX(-50%);
+  height: 1.8rem;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
+}
+/* positioning and styling buttons */
+.bttn {
+  position: absolute;
+  font-size: 0.5rem;
+  border-radius: 8px;
+  border: none;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.new-bttn {
+  top: 9%;
+}
+
+.roll-bttn {
+  top: 67%;
+}
+
+.hold-bttn {
+  top: 77%;
+}
+
+.active-player {
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 0.5rem;
+}
+
+.winner {
+  background-color: rgb(25, 24, 24);
+  border-radius: 0.5rem;
+}
+
+.winner h2 {
+  color: #c7365f;
+}
+
+.hidden {
+  display: none;
+}
+
+.disable {
+  color: grey;
+}
